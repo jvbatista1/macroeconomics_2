@@ -1,7 +1,7 @@
-function c = bisection(f,a,b)
+function [c] = bisection(f,a,b)
 
 if f(a)*f(b)>0
-    disp("wrong choice for a and b")
+    disp("wrong choice for a and b");
 else
     c = (a+b)/2;
     err = abs(f(c));
